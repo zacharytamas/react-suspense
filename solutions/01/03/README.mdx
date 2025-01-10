@@ -1,0 +1,22 @@
+# Formal Status
+
+<EpicVideo url="https://www.epicreact.dev/workshops/react-suspense/formal-status" />
+
+👨‍💼 Let's clean up things a little bit with what we've built so far by making the
+status of our promise a little more formal.
+
+What we have now is:
+
+- if there's an error, throw it
+- if there's no ship, throw the promise
+- render the ship
+
+But that's not exactly clear.
+
+So instead, let's add a `status` variable that can be
+`'pending' | 'fulfilled' | 'rejected'` (start it out with `'pending'`).
+
+📜 To learn more about why this is important, read
+[Make Impossible States Impossible](https://kentcdodds.com/blog/make-impossible-states-impossible)
+and
+[Stop using isLoading booleans](https://kentcdodds.com/blog/stop-using-isloading-booleans)
